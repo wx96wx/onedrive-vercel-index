@@ -52,8 +52,8 @@ module.exports = {
   // you provide. See the documentation for details.
   links: [
     {
-      name: 'GitHub',
-      link: 'https://github.com/spencerwooo/onedrive-vercel-index',
+      name: '0day pre',
+      link: 'https://pre.corrupt-net.org/index.php?q=type:0day',
     },
   ],
 
