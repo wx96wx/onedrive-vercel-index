@@ -24,5 +24,5 @@ export const humanFileSize = (size: number) => {
  * @returns Human readable form of the file or folder last modified date
  */
 export const formatModifiedDateTime = (lastModifedDateTime: string) => {
-  return dayjs(lastModifedDateTime).utc().format(siteConfig.datetimeFormat)
+  return dayjs(lastModifedDateTime).format(siteConfig.datetimeFormat)
 }
