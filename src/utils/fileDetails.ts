@@ -1,7 +1,8 @@
 import dayjs from 'dayjs'
-
+import utc from 'dayjs/plugin/utc';
 import siteConfig from '../../config/site.config'
 
+dayjs.extend(utc);
 /**
  * Convert raw bits file/folder size into a human readable string
  *
@@ -24,5 +25,5 @@ export const humanFileSize = (size: number) => {
  * @returns Human readable form of the file or folder last modified date
  */
 export const formatModifiedDateTime = (lastModifedDateTime: string) => {
-  return dayjs(lastModifedDateTime).format(siteConfig.datetimeFormat)
+  return dayjs(lastModifedDateTime).utc().format(siteConfig.datetimeFormat)
 }
