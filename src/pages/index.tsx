@@ -24,21 +24,6 @@ export default function Home() {
             <Breadcrumb />
             <SwitchLayout />
           </nav>
-          
-          {/* Here is where the link will be added */}
-          <div className="flex items-center justify-between">
-            <h1>{siteConfig.title}</h1>
-            {/* Add a link next to the title */}
-            <a 
-              href="https://example.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-blue-500 hover:underline ml-4"
-            >
-              Visit Example Site
-            </a>
-          </div>
-
           <FileListing />
         </div>
       </main>
